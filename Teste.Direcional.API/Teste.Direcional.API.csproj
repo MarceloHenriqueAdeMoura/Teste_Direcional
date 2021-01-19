@@ -8,6 +8,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Unity" Version="5.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Teste.Direcional.Dominio\Teste.Direcional.Dominio.csproj" />
+    <ProjectReference Include="..\Teste.Direcional.Infra\Teste.Direcional.Infra.csproj" />
   </ItemGroup>
 
 </Project>
