@@ -42,12 +42,12 @@
         <div class="col-lg-12">
             <div class="ibox">
                 <div id="FuncionarioRMCadastrar" class="ibox-content form-group">
-                    <div class="col-md-12">                       
+                    <div class="col-md-12">
                     </div>
-                    <form class="m-t" asp-controller="Contato" asp-action="Salvar">
+                    <form class="m-t" asp-controller="Contato" asp-action="Salvar" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <div class="col-md-12">
-                                <div class="row">                                    
+                                <div class="row">
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label class="col-form-labe" for="Nome">Nome</label>
@@ -71,11 +71,16 @@
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <label class="col-form-labe" for="Anexo">Anexo</label>
-                                            <input type="text" id="Anexo" name="Anexo" class="form-control" asp-for="Anexo" autocomplete="off">
-                                            <span asp-validation-for="Anexo" class="text-danger"></span>
+                                            @*<label class="col-form-labe" for="Anexo">Anexo</label>
+                                                <input type="file" id="Anexo" name="Anexo" class="form-control" asp-for="Anexo" autocomplete="off">
+                                                <span asp-validation-for="Anexo" class="text-danger"></span>*@
+
+                                            <div class="custom-file">
+                                                <input id="dataFile" type="file" name="file" class="custom-file-input">
+                                                <label for="logo" class="custom-file-label">Escolher arquivo...</label>
+                                            </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                             </div>
                             <div class="ibox-footer">
@@ -86,7 +91,7 @@
                             </div>
                         </div>
                     </form>
-                </div>               
+                </div>
             </div>
         </div>
     </div>

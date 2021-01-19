@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
@@ -17,6 +20,7 @@ namespace Teste.Direcional.WEB.Controllers
     public class ContatoController : Controller
     {
         private static Contato _contato;
+        private string fileName;
 
         [HttpGet]
         public IActionResult Index(int? page)
@@ -32,21 +36,38 @@ namespace Teste.Direcional.WEB.Controllers
         }
 
         [HttpPost]
-        public IActionResult Salvar(ContatoViewModel contatoViewModel)
-        {
+        public IActionResult Salvar(ContatoViewModel contatoViewModel, [FromServices] IHostingEnvironment hostingEnvironment, IFormFile file)
+        {                        
             Contato contato = null;
 
             if (!string.IsNullOrEmpty(contatoViewModel.CPF))
             {
                 if (Funcoes.IsCpf(contatoViewModel.CPF) && Funcoes.ValidarEmail(contatoViewModel.Email))
                 {
-                    contato = new Contato()
+                    fileName = null;
+
+                    try
                     {
-                        //Id = contatoViewModel.Id,                    
+                        fileName = $"{hostingEnvironment.WebRootPath}\\files\\{file.FileName}";
+                    }
+                    catch (Exception e)
+                    {
+                        TempData["MensagemInvalido"] = " Favor inserir um arquivo!";
+                        return View("Cadastrar");
+                    }
+
+                    using (FileStream fileStream = System.IO.File.Create(fileName))
+                    {
+                        file.CopyTo(fileStream);
+                        fileStream.Flush();
+                    }
+
+                    contato = new Contato()
+                    {                                         
                         Nome = contatoViewModel.Nome,
                         CPF = contatoViewModel.CPF,
                         Email = contatoViewModel.Email,
-                        Anexo = contatoViewModel.Anexo
+                        Anexo = fileName
                     };
 
                     var client = new RestClient(Settings.Default.UrlBase);
