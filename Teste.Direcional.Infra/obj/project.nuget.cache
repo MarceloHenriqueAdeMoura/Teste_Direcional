@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rcQx0rzmgo1w+Kil+LnjhCAt/ezmrTlqc1GRDLvHhPNm/ktP+VdsRHN71abNWdMaJEDrZg+1sQ/6Phs6p6upXw==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\marce\\Documents\\VisualStudioProjects\\Teste_Direcional\\Teste.Direcional.Infra\\Teste.Direcional.Infra.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

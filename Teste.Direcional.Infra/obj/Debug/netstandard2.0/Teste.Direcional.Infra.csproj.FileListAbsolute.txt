@@ -1,0 +1,8 @@
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Infra\bin\Debug\netstandard2.0\Teste.Direcional.Infra.deps.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Infra\bin\Debug\netstandard2.0\Teste.Direcional.Infra.dll
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Infra\bin\Debug\netstandard2.0\Teste.Direcional.Infra.pdb
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Infra\obj\Debug\netstandard2.0\Teste.Direcional.Infra.AssemblyInfoInputs.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Infra\obj\Debug\netstandard2.0\Teste.Direcional.Infra.AssemblyInfo.cs
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Infra\obj\Debug\netstandard2.0\Teste.Direcional.Infra.csproj.CoreCompileInputs.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Infra\obj\Debug\netstandard2.0\Teste.Direcional.Infra.dll
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Infra\obj\Debug\netstandard2.0\Teste.Direcional.Infra.pdb

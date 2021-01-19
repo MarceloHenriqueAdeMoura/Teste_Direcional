@@ -1,0 +1,16 @@
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\bin\Debug\netcoreapp2.2\Teste.Direcional.API.deps.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\bin\Debug\netcoreapp2.2\Teste.Direcional.API.runtimeconfig.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\bin\Debug\netcoreapp2.2\Teste.Direcional.API.runtimeconfig.dev.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\bin\Debug\netcoreapp2.2\Teste.Direcional.API.dll
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\bin\Debug\netcoreapp2.2\Teste.Direcional.API.pdb
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.AssemblyInfoInputs.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.AssemblyInfo.cs
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.csproj.CoreCompileInputs.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.RazorAssemblyInfo.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.RazorAssemblyInfo.cs
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.RazorTargetAssemblyInfo.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.dll
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.pdb
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.API\obj\Debug\netcoreapp2.2\Teste.Direcional.API.genruntimeconfig.cache

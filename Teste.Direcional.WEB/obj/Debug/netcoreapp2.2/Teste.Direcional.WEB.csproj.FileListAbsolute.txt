@@ -1,0 +1,17 @@
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.WEB.deps.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.WEB.runtimeconfig.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.WEB.runtimeconfig.dev.json
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.WEB.dll
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.WEB.pdb
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.csprojAssemblyReference.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.AssemblyInfoInputs.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.AssemblyInfo.cs
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.csproj.CoreCompileInputs.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.RazorAssemblyInfo.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.RazorAssemblyInfo.cs
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.RazorTargetAssemblyInfo.cache
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.dll
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.pdb
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.genruntimeconfig.cache
