@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NHLzqdkmYimVVGYx/xhGmRw2DKOWie82z7xK6HmQBHBvmquDQsGSfcN4Ihw10k6dSJVxJ+Yu9xw7nAYA27ELKA==",
+  "dgSpecHash": "i65eiwIDMBb5uIuHtDBol76HdkPq8ahYPB4aEuIK75SsyXf6uC5oyOGQVimKH/NfVRIekggITlBe89dcHfAHHQ==",
   "success": true,
   "projectFilePath": "D:\\Users\\marce\\Documents\\VisualStudioProjects\\Teste_Direcional\\Teste.Direcional.WEB\\Teste.Direcional.WEB.csproj",
   "expectedPackageFiles": [
@@ -168,6 +168,7 @@
     "C:\\Users\\Marcelo Henrique\\.nuget\\packages\\microsoft.identitymodel.tokens.saml\\5.3.0\\microsoft.identitymodel.tokens.saml.5.3.0.nupkg.sha512",
     "C:\\Users\\Marcelo Henrique\\.nuget\\packages\\microsoft.identitymodel.xml\\5.3.0\\microsoft.identitymodel.xml.5.3.0.nupkg.sha512",
     "C:\\Users\\Marcelo Henrique\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\Marcelo Henrique\\.nuget\\packages\\microsoft.net.sdk.razor\\2.2.0\\microsoft.net.sdk.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Marcelo Henrique\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
     "C:\\Users\\Marcelo Henrique\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
     "C:\\Users\\Marcelo Henrique\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
