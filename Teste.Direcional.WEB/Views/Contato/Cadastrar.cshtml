@@ -1,0 +1,124 @@
+﻿@model Teste.Direcional.WEB.Models.ContatoViewModel
+
+@{
+    ViewBag.Title = "Cadastrar Contato";
+    ViewBag.ExibirBreadcrumb = true;
+
+}
+
+<div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h1>Cadastro de Contatos</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @{
+
+        try
+        {
+            if (@TempData["MensagemCadastrarInvalido"] != null)
+            {
+                <div class="alert alert-danger">
+                    <strong>Atenção:</strong>@TempData["MensagemCadastrarInvalido"]
+                </div>
+            }
+            else if (@TempData["MensagemCadastrarSalvo"] != null)
+            {
+                <div class="alert alert-success">
+                    <strong>Atenção:</strong>@TempData["MensagemCadastrarSalvo"]
+                </div>
+            }
+        }
+        catch { }
+    }
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div id="FuncionarioRMCadastrar" class="ibox-content form-group">
+                    <div class="col-md-12">                       
+                    </div>
+                    <form class="m-t" asp-controller="Usuario" asp-action="Salvar">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="row">                                    
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="col-form-labe" for="Nome">Nome</label>
+                                            <input type="text" id="Nome" name="Nome" class="form-control" asp-for="Nome" autocomplete="off">
+                                            <span asp-validation-for="Nome" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="form-group">
+                                            <label class="col-form-labe" for="CPF">CPF</label>
+                                            <input type="text" id="CPF" name="CPF" class="form-control" asp-for="CPF" autocomplete="off">
+                                            <span asp-validation-for="CPF" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <label class="col-form-labe" for="Email">Email</label>
+                                            <input type="text" id="Email" name="Email" class="form-control" asp-for="Email" autocomplete="off">
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="form-group">
+                                            <label class="col-form-labe" for="Anexo">Anexo</label>
+                                            <input type="text" id="Anexo" name="Anexo" class="form-control" asp-for="Anexo" autocomplete="off">
+                                            <span asp-validation-for="Anexo" class="text-danger"></span>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="ibox-footer">
+                                <button id="btnEditar" type="submit" class="btn button w-150" data-style="expand-right">
+                                    Salvar
+                                </button>
+                                <a asp-action="Index" class="btn btn-default w-150">Voltar</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<style>
+    div.table {
+        overflow-x: scroll;
+    }
+
+    td {
+        border-top: none !important;
+    }
+
+    th {
+        border-bottom: none !important;
+    }
+
+    .button {
+        background-color: #004691;
+        border-color: #004691;
+        color: #FFF;
+    }
+
+    .buttonEditar {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+</style>

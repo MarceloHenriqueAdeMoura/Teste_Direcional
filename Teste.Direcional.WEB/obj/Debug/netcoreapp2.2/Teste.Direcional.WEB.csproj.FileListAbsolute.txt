@@ -29,3 +29,9 @@ D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.Views.pdb
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.genruntimeconfig.cache
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Teste.Direcional.WEB.csproj.CopyComplete
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.Dominio.dll
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.Infra.dll
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.Infra.pdb
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\bin\Debug\netcoreapp2.2\Teste.Direcional.Dominio.pdb
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Razor\Views\Contato\Cadastrar.g.cshtml.cs
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.WEB\obj\Debug\netcoreapp2.2\Razor\Views\Contato\Index.g.cshtml.cs

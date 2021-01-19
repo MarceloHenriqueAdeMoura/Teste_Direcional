@@ -32,5 +32,23 @@ namespace Teste.Direcional.Dominio.Properties {
                 return ((string)(this["ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:49456/api")]
+        public string UrlBase {
+            get {
+                return ((string)(this["UrlBase"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Contato/SalvarContato")]
+        public string SalvarContato {
+            get {
+                return ((string)(this["SalvarContato"]));
+            }
+        }
     }
 }
