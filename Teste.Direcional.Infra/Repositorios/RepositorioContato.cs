@@ -13,7 +13,38 @@ namespace Teste.Direcional.Infra.Repositorios
     {
         public int Salvar(Contato registro)
         {
-            throw new NotImplementedException();
+            using (var conexao = CriarConexao())
+            {
+                string sql = @"IF NOT EXISTS(SELECT * FROM Contato WHERE CPF = @CPF)
+                                BEGIN
+                                    INSERT INTO Contato ([Nome], [CPF], [Email], [Anexo])
+                                       VALUES( 
+                                       @Nome, 
+                                       @CPF, 
+                                       @Email,
+                                       @Anexo)
+                                    SELECT CAST(SCOPE_IDENTITY() as int)
+                                END
+                                ELSE
+                                 BEGIN
+                                    UPDATE Contato SET
+                                      Nome = @Nome, 
+                                      CPF = @CPF, 
+                                      Email = @Email, 
+                                      Anexo = @Anexo
+                                    WHERE Id = @IdContato
+                                    SELECT @IdContato
+                                END";
+
+                return conexao.Query<int>(sql, new
+                {
+                    IdContato = registro.Id,
+                    Nome = registro.Nome,
+                    CPF = registro.CPF,
+                    Email = registro.Email,
+                    Anexo = registro.Anexo
+                }).SingleOrDefault();
+            }
         }
     }
 }
