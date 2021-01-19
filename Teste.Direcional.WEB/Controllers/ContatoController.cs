@@ -38,7 +38,7 @@ namespace Teste.Direcional.WEB.Controllers
 
             if (!string.IsNullOrEmpty(contatoViewModel.CPF))
             {
-                if (Funcoes.IsCpf(contatoViewModel.CPF))
+                if (Funcoes.IsCpf(contatoViewModel.CPF) && Funcoes.ValidarEmail(contatoViewModel.Email))
                 {
                     contato = new Contato()
                     {
