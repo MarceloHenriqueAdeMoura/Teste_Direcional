@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Teste.Direcional.API.Comum;
+using Teste.Direcional.Dominio.Util;
 
 namespace Teste.Direcional.API
 {
@@ -18,6 +20,7 @@ namespace Teste.Direcional.API
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            IoC.Inicializar(InjetorDependencia.Instancia());
         }
 
         public IConfiguration Configuration { get; }
