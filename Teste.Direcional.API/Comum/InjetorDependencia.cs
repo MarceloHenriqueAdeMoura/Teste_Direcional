@@ -35,7 +35,8 @@ namespace Teste.Direcional.API.Comum
         private void MapearDependencias()
         {
             _container
-                 .RegisterType<IRepositorioContato, RepositorioContato>();
+                 .RegisterType<IRepositorioContato, RepositorioContato>()
+                 .RegisterType<IRepositorioUsuario, RepositorioUsuario>();
         }
     }
 }
