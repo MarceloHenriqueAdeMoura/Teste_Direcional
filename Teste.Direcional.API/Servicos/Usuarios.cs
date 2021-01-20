@@ -8,15 +8,16 @@ using Teste.Direcional.Infra.Repositorios;
 
 namespace Teste.Direcional.API.Servicos
 {
-    public class Contatos
+    public class Usuarios
     {
-        public Contato ObterContatoPorCPF(string cpf)
+        public Usuario ObterUsuarioPorLogin(string cpf)
         {
-            return IoC.Resolver<RepositorioContato>().ObterPorCPF(cpf);
+            return IoC.Resolver<RepositorioUsuario>().ObterPorLogin(cpf);
         }
-        public int SalvarContato(Contato contato)
+
+        public int SalvarUsuario(Usuario usuario)
         {
-            return IoC.Resolver<RepositorioContato>().Salvar(contato);
+            return IoC.Resolver<RepositorioUsuario>().Salvar(usuario);
         }
     }
 }

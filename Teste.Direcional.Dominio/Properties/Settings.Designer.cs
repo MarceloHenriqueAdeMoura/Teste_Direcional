@@ -50,5 +50,32 @@ namespace Teste.Direcional.Dominio.Properties {
                 return ((string)(this["SalvarContato"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Contato/ObterContatoPorCPF")]
+        public string ObterContatoPorCPF {
+            get {
+                return ((string)(this["ObterContatoPorCPF"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Usuario/SalvarUsuario")]
+        public string SalvarUsuario {
+            get {
+                return ((string)(this["SalvarUsuario"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Usuario/ObterUsuarioPorLogin")]
+        public string ObterUsuarioPorLogin {
+            get {
+                return ((string)(this["ObterUsuarioPorLogin"]));
+            }
+        }
     }
 }

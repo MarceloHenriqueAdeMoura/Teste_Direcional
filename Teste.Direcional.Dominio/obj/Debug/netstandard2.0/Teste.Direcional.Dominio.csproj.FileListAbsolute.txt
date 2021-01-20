@@ -1,9 +1,9 @@
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\bin\Debug\netstandard2.0\Teste.Direcional.Dominio.deps.json
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\bin\Debug\netstandard2.0\Teste.Direcional.Dominio.dll
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\bin\Debug\netstandard2.0\Teste.Direcional.Dominio.pdb
+D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\obj\Debug\netstandard2.0\Teste.Direcional.Dominio.csprojAssemblyReference.cache
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\obj\Debug\netstandard2.0\Teste.Direcional.Dominio.AssemblyInfoInputs.cache
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\obj\Debug\netstandard2.0\Teste.Direcional.Dominio.AssemblyInfo.cs
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\obj\Debug\netstandard2.0\Teste.Direcional.Dominio.csproj.CoreCompileInputs.cache
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\obj\Debug\netstandard2.0\Teste.Direcional.Dominio.dll
 D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\obj\Debug\netstandard2.0\Teste.Direcional.Dominio.pdb
-D:\Users\marce\Documents\VisualStudioProjects\Teste_Direcional\Teste.Direcional.Dominio\obj\Debug\netstandard2.0\Teste.Direcional.Dominio.csprojAssemblyReference.cache

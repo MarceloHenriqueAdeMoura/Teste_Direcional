@@ -11,6 +11,19 @@ namespace Teste.Direcional.Infra.Repositorios
 {
     public class RepositorioContato : RepositorioBase<Contato>, IRepositorioContato
     {
+        public Contato ObterPorCPF(string cpf)
+        {
+            using (var conexao = CriarConexao())
+            {
+                string sql = @"SELECT * FROM Contato WHERE Cpf = @cpf";
+
+                return conexao.Query<Contato>(sql, new
+                {
+                    CPF = cpf
+                }).FirstOrDefault();
+            }
+        }
+
         public int Salvar(Contato registro)
         {
             using (var conexao = CriarConexao())

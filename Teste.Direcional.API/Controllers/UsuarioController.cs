@@ -11,16 +11,17 @@ using Teste.Direcional.Dominio.Entidades;
 
 namespace Teste.Direcional.API.Controllers
 {
-    [Route("api/Contato")]
+    [Route("api/Usuario")]
     [ApiController]
-    public class ContatoController : ControllerBase
+    public class UsuarioController : ControllerBase
     {
-        [Route("ObterContatoPorCPF")]
-        public IActionResult ObterContatoPorCPF([FromForm] string cpf)
+        [HttpPost]
+        [Route("ObterUsuarioPorLogin")]
+        public IActionResult ObterUsuarioPorLogin([FromForm] string cpf)
         {
             try
             {
-                return Ok(new Contatos().ObterContatoPorCPF(cpf));
+                return Ok(new Usuarios().ObterUsuarioPorLogin(cpf));
             }
             catch (Exception Ex)
             {
@@ -29,13 +30,13 @@ namespace Teste.Direcional.API.Controllers
         }
 
         [HttpPost]
-        [Route("SalvarContato")]
-        public IActionResult SalvarContato([FromBody]JObject objeto)
+        [Route("SalvarUsuario")]
+        public IActionResult SalvarUsuario([FromBody]JObject objeto)
         {
             try
             {
-                var contato = JsonConvert.DeserializeObject<Contato>(objeto["contato"].ToObject<string>());
-                return Ok(new Contatos().SalvarContato(contato));
+                var usuario = JsonConvert.DeserializeObject<Usuario>(objeto["usuario"].ToObject<string>());
+                return Ok(new Usuarios().SalvarUsuario(usuario));
             }
             catch (Exception Ex)
             {

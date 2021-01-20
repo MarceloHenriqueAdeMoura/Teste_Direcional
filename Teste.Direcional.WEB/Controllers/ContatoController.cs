@@ -23,7 +23,7 @@ namespace Teste.Direcional.WEB.Controllers
         private string fileName;
 
         [HttpGet]
-        public IActionResult Index(int? page)
+        public IActionResult Index()
         {
             return View("Index");
         }
@@ -37,7 +37,7 @@ namespace Teste.Direcional.WEB.Controllers
 
         [HttpPost]
         public IActionResult Salvar(ContatoViewModel contatoViewModel, [FromServices] IHostingEnvironment hostingEnvironment, IFormFile file)
-        {                        
+        {
             Contato contato = null;
 
             if (!string.IsNullOrEmpty(contatoViewModel.CPF))
@@ -46,24 +46,27 @@ namespace Teste.Direcional.WEB.Controllers
                 {
                     fileName = null;
 
-                    try
+                    if (file != null)
                     {
-                        fileName = $"{hostingEnvironment.WebRootPath}\\files\\{file.FileName}";
-                    }
-                    catch (Exception e)
-                    {
-                        TempData["MensagemInvalido"] = " Favor inserir um arquivo!";
-                        return View("Cadastrar");
-                    }
+                        try
+                        {
+                            fileName = $"{hostingEnvironment.WebRootPath}\\files\\{file.FileName}";
+                        }
+                        catch (Exception e)
+                        {
+                            TempData["MensagemInvalido"] = " Favor inserir um arquivo!";
+                            return View("Cadastrar");
+                        }
 
-                    using (FileStream fileStream = System.IO.File.Create(fileName))
-                    {
-                        file.CopyTo(fileStream);
-                        fileStream.Flush();
+                        using (FileStream fileStream = System.IO.File.Create(fileName))
+                        {
+                            file.CopyTo(fileStream);
+                            fileStream.Flush();
+                        }
                     }
 
                     contato = new Contato()
-                    {                                         
+                    {
                         Nome = contatoViewModel.Nome,
                         CPF = contatoViewModel.CPF,
                         Email = contatoViewModel.Email,
@@ -80,6 +83,11 @@ namespace Teste.Direcional.WEB.Controllers
 
                     TempData["MensagemCadastrarSalvo"] = " Contato cadastrado no sistema!";
                     ModelState.Clear();
+                    return View("Cadastrar");
+                }
+                else
+                {
+                    TempData["MensagemCadastrarInvalido"] = " CPF ou Email inválidos!";
                     return View("Cadastrar");
                 }
             }

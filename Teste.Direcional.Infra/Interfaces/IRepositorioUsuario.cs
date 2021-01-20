@@ -5,9 +5,8 @@ using Teste.Direcional.Dominio.Entidades;
 
 namespace Teste.Direcional.Infra.Interfaces
 {
-    public interface IRepositorioContato : IRepositorioBase<Contato>
+    public interface IRepositorioUsuario : IRepositorioBase<Usuario>
     {
-        Contato ObterPorCPF(string cpf);
-        int Salvar(Contato registro);
+        int Salvar(Usuario registro);
     }
 }

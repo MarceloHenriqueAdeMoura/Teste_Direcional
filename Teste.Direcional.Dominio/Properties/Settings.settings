@@ -11,5 +11,14 @@
     <Setting Name="SalvarContato" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Contato/SalvarContato</Value>
     </Setting>
+    <Setting Name="ObterContatoPorCPF" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Contato/ObterContatoPorCPF</Value>
+    </Setting>
+    <Setting Name="SalvarUsuario" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Usuario/SalvarUsuario</Value>
+    </Setting>
+    <Setting Name="ObterUsuarioPorLogin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Usuario/ObterUsuarioPorLogin</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

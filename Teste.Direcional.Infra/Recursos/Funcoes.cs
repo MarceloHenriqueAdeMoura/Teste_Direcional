@@ -62,5 +62,56 @@ namespace Teste.Direcional.Infra.Recursos
 
             return emailValido;
         }
+
+        public static bool ValidarSenha(string senha)
+        {
+            bool senhaValida = false;
+
+            var minLength = 4;
+            var maxLength = 10;
+            var numNumbers = 1;
+            var carUpper = 1;
+            var carSpecial = 1;
+
+            string number = string.Format("[0-9]");
+            string upper = string.Format("[A-Z]");
+            string special = string.Format("[^a-zA-Z0-9]");
+
+            int qtdNumero = 0;
+            int carMaiscula = 0;
+            int qtdSpecial = 0;
+
+            try
+            {
+                if (Regex.IsMatch(senha, number))
+                {
+                    qtdNumero++;
+                }
+                if (Regex.IsMatch(senha, upper))
+                {
+                    carMaiscula++;
+                }
+                if (Regex.IsMatch(senha, special))
+                {
+                    qtdSpecial++;
+                }
+
+                // Check the length.
+                if (senha.Length < minLength) { return false; }
+                if (senha.Length > maxLength) { return false; }
+                // Check for minimum number of occurrences.
+                if (qtdNumero < numNumbers) { return false; }
+                if (carMaiscula < carUpper) { return false; }
+                if (qtdSpecial < carSpecial) { return false; }
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                senhaValida = false;
+            }          
+
+            //Passed all checks.
+            return true;
+
+        }
     }
 }
