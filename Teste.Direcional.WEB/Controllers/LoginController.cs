@@ -34,9 +34,9 @@ namespace Teste.Direcional.WEB.Controllers
             {
                 var usuario = new UsuarioViewModel();
                 var client = new RestClient(Settings.Default.UrlBase);
-                var requestUsuario = new RestRequest(Settings.Default.ObterUsuarioPorLogin);
+                var requestUsuario = new RestRequest(Settings.Default.ObterUsuarioPorLogin, Method.GET);
                 requestUsuario.AddParameter("cpf", loginViewModel.Login);
-                var responseUsuario = client.Post(requestUsuario);
+                var responseUsuario = client.Execute(requestUsuario);
                 var contentUsuario = responseUsuario.Content;
                 var retornoUsuario = JsonConvert.DeserializeObject<Usuario>(contentUsuario);
 

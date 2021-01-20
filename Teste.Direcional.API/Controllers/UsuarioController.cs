@@ -15,9 +15,9 @@ namespace Teste.Direcional.API.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        [HttpPost]
+        [HttpGet]
         [Route("ObterUsuarioPorLogin")]
-        public IActionResult ObterUsuarioPorLogin([FromForm] string cpf)
+        public IActionResult ObterUsuarioPorLogin(string cpf)
         {
             try
             {
